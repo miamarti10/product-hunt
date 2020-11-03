@@ -1,0 +1,272 @@
+* {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+body {
+  width: 60%;
+  margin: auto;
+  background-color: #e6e2e2b1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "headerA headerA headerA headerA" "headerB headerB headerB headerB" "box1 box1 box1 aside1" "box1 box1 box1 aside1" "box1 box1 box1 aside1" "box1 box1 box1 aside2" "box1 box1 box1 aside2" "box1 box1 box1 aside2" "box2 box2 box2 aside2" "box2 box2 box2 aside2" "box2 box2 box2 aside2" "box2 box2 box2 aside3" "box2 box2 box2 aside3" "box2 box2 box2 aside3";
+}
+
+.headerA {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "logo search search" "nav nav nav";
+  grid-area: headerA;
+  border: solid;
+  background-color: white;
+}
+
+.search {
+  grid-area: search;
+  background-color: white;
+}
+
+.logo {
+  margin-top: 10px;
+  grid-area: logo;
+}
+.logo img {
+  width: 50px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.logo .search {
+  float: left;
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: white;
+  font-size: 17px;
+}
+
+.nav {
+  grid-area: nav;
+  border: solid;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.headerB {
+  background-color: white;
+  height: 85px;
+  grid-area: headerB;
+  border: solid;
+  text-align: center;
+  position: relative;
+}
+.headerB img {
+  width: 30px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.headerB p {
+  margin-top: 0px;
+  margin-left: -80px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+}
+.headerB input[type=text] {
+  display: inline-block;
+  width: 20%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.headerB input[type=submit] {
+  margin-top: 40px;
+  display: inline;
+  width: 10%;
+  background-color: orangered;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.box1 {
+  height: 500px;
+  grid-area: box1;
+  border: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: right 20px;
+  background-color: white;
+}
+.box1 .title {
+  font-size: 20px;
+  border-bottom: 3px solid #e6e2e2b1;
+  padding-bottom: 15px;
+}
+
+.app1 {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid #e6e2e2b1;
+  padding-bottom: 15px;
+}
+.app1 .app_foto {
+  width: 100px;
+  padding-right: 25px;
+}
+.app1 .button {
+  width: 1px;
+  height: 20px;
+}
+.app1 h1 {
+  margin: 0px;
+  font-size: 20px;
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+.app1 p {
+  font-size: 15px;
+  color: grey;
+}
+.app1 .iphone {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.app2 {
+  display: flex;
+  border-bottom: 3px solid #e6e2e2b1;
+  padding-bottom: 15px;
+}
+.app2 .app_foto {
+  width: 100px;
+  padding-right: 25px;
+}
+.app2 .button {
+  width: 1px;
+  height: 20px;
+}
+.app2 h1 {
+  margin: 15px;
+  margin-left: -1px;
+  font-size: 20px;
+  border-bottom: none;
+  margin-bottom: 0px;
+  position: relative;
+}
+.app2 p {
+  font-size: 15px;
+  color: grey;
+}
+.app2 .iphone {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.app3 {
+  display: flex;
+  border-bottom: 3px solid #e6e2e2b1;
+  padding-bottom: 15px;
+}
+.app3 .app_foto {
+  width: 100px;
+  padding-right: 25px;
+}
+.app3 .button {
+  width: 1px;
+  height: 20px;
+}
+.app3 h1 {
+  margin: 15px;
+  margin-left: -1px;
+  font-size: 20px;
+  border-bottom: none;
+  margin-bottom: 0px;
+  position: relative;
+}
+.app3 p {
+  font-size: 15px;
+  color: grey;
+}
+.app3 .iphone {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.box2 {
+  grid-area: box2;
+  border: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: right 20px;
+  background-color: white;
+  margin-top: -420px;
+}
+.box2 .title {
+  font-size: 20px;
+  border-bottom: 3px solid #e6e2e2b1;
+  padding-bottom: 15px;
+}
+
+.app4 {
+  display: flex;
+  border-bottom: 3px solid #e6e2e2b1;
+  padding-bottom: 15px;
+}
+.app4 .app_foto {
+  width: 100px;
+  padding-right: 25px;
+}
+.app4 .button {
+  width: 1px;
+  height: 20px;
+}
+.app4 h1 {
+  margin-top: -3px;
+  margin-left: -1px;
+  font-size: 20px;
+  border-bottom: none;
+  margin-bottom: 0px;
+  position: relative;
+}
+.app4 p {
+  font-size: 15px;
+  color: grey;
+}
+.app4 .iphone {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.aside1 {
+  grid-area: aside1;
+  border: solid;
+}
+
+.aside2 {
+  grid-area: aside2;
+  border: solid;
+}
+
+.aside3 {
+  grid-area: aside3;
+  border: solid;
+}
