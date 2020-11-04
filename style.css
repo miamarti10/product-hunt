@@ -24,7 +24,7 @@ body {
   gap: 0px 0px;
   grid-template-areas: "logo search search" "nav nav nav";
   grid-area: headerA;
-  border: solid;
+  border: none;
   background-color: white;
 }
 
