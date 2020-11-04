@@ -597,3 +597,33 @@ body {
 
             }
         }
+
+
+ @media screen and (max-width: 1000px) {
+
+
+    body{
+        background-color: tomato;
+
+    }
+
+    .aside1{
+
+        visibility: hidden;
+
+    }
+
+    .aside2{
+
+        visibility: hidden;
+
+    }
+
+    .aside3{
+
+        visibility: hidden;
+
+    }
+
+
+ }
