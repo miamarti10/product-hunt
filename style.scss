@@ -1,8 +1,6 @@
 * {
     font-family: sans-serif;
     font-size: 15px;
-
-
 }
 
 body {
@@ -101,37 +99,36 @@ body {
 .headerB {
     margin-top: -2px;
     background-color: white;
-    height: 85px;
+    height: 95px;
     grid-area: headerB;
     text-align: center;
     position: relative;
 
+
     img {
         width: 30px;
-        margin-left: 2px;
-        margin-top: 2px;
+     
     }
 
     p {
-        margin-top: 0px;
-        margin-left: -80px;
+        margin-top: 5px;
         text-align: center;
         display: inline-block;
         position: absolute;
     }
 
     input[type=text] {
-        display: inline-block;
         width: 20%;
         padding: 10px 20px;
         margin: 8px 0;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        margin-left: 50px;
     }
 
     input[type=submit] {
-        margin-top: 40px;
+        margin-top: 45px;
         display: inline;
         width: 15%;
         background-color: orangered;
@@ -597,33 +594,3 @@ body {
 
             }
         }
-
-
- @media screen and (max-width: 1000px) {
-
-
-    body{
-        background-color: tomato;
-
-    }
-
-    .aside1{
-
-        visibility: hidden;
-
-    }
-
-    .aside2{
-
-        visibility: hidden;
-
-    }
-
-    .aside3{
-
-        visibility: hidden;
-
-    }
-
-
- }
